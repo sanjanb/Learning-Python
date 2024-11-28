@@ -159,3 +159,71 @@ Imagine this program as your **personal Bitcoin broker**:
 - You tell it how many Bitcoins you want.
 - It talks to a global price oracle to get real-time data.
 - It calculates the cost and gives you a crystal-clear price tag.
+
+
+#### **You can copy this Code**
+```python
+   import sys
+import requests
+
+
+def main():
+    # Validate and retrieve the number of Bitcoins from the command-line argument
+    bitcoins = get_bitcoins()
+
+    # Fetch the current price of Bitcoin in USD
+    price = fetch_bitcoin_price()
+
+    # Calculate the total cost
+    cost = bitcoins * price
+
+    # Output the cost formatted to four decimal places with thousands separators
+    print(f"${cost:,.4f}")
+
+
+def get_bitcoins():
+    """
+    Retrieves the number of Bitcoins from the command-line argument.
+
+    Returns:
+        float: The number of Bitcoins to buy.
+
+    Exits:
+        If the argument cannot be converted to a float or is missing.
+    """
+    if len(sys.argv) != 2:
+        sys.exit("Usage: python bitcoin.py <number_of_bitcoins>")
+
+    try:
+        return float(sys.argv[1])
+    except ValueError:
+        sys.exit("Error: The number of Bitcoins must be a numeric value.")
+
+
+def fetch_bitcoin_price():
+    """
+    Fetches the current price of Bitcoin in USD from the CoinDesk API.
+
+    Returns:
+        float: The current price of Bitcoin in USD.
+
+    Raises:
+        Exits the program with an error message if the API request fails.
+    """
+    try:
+        response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        data = response.json()
+        return data["bpi"]["USD"]["rate_float"]
+    except requests.RequestException:
+        sys.exit("Error: Unable to fetch Bitcoin price.")
+    except KeyError:
+        sys.exit("Error: Unexpected data format from the API.")
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+
