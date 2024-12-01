@@ -1,13 +1,13 @@
-# 🐍 Python Learning Journey
+#  Python Learning Journey
 
 Welcome to my **Python Learning Repository**!  
 This collection showcases my projects, exercises, and notes from a comprehensive Python course. Each file represents a step in my journey to mastering Python.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
-### 📝 Overview of Files and Topics
+###  Overview of Files and Topics
 
 | **Category**             | **File Name**                             | **Description**                                                                 |
 |--------------------------|-------------------------------------------|---------------------------------------------------------------------------------|
@@ -30,7 +30,7 @@ This collection showcases my projects, exercises, and notes from a comprehensive
 
 ---
 
-## 🌟 Learning Highlights
+##  Learning Highlights
 
 ### Key Takeaways:
 1. **Programming Foundations**: Mastered Python's syntax and core programming concepts.
@@ -45,14 +45,14 @@ This collection showcases my projects, exercises, and notes from a comprehensive
 
 ---
 
-## 🎯 Future Goals
+##  Future Goals
 - Explore **Flask** and **Django** for web development.
 - Dive into **data science** and **machine learning** with libraries like **NumPy**, **Pandas**, and **Scikit-learn**.
 - Contribute to **open-source Python projects**.
 
 ---
 
-## 📜 About This Repository
+##  About This Repository
 
 This repository is a showcase of my **Python learning progress** and serves as a **reference** for Python enthusiasts. Each file represents a unique learning experience or project that helped me develop my programming skills.  
 
@@ -60,8 +60,8 @@ If you’re starting your Python journey, feel free to explore these examples an
 
 ---
 
-## 🌐 Connect and Learn More
-- **Follow me on GitHub**: [Your GitHub Profile](#)
+##  Connect and Learn More
+- **Follow me on GitHub**: [github.com/sanjanb](#)
 - **Explore my Python video demos**: [Watch on YouTube](#)
 
 ---
